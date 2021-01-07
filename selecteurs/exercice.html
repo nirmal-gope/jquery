@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+</head>
+<body>
+
+<div>
+    <form>
+
+<!--        <input type="text" placeholder="texte"/>-->
+<!--        <br>-->
+
+<!--        <input type="password"/>-->
+<!--        <br>-->
+
+<!--        <input type="email"/>-->
+<!--        <br>-->
+
+<!--        <input type="submit"/>-->
+<!--        <br>-->
+
+<!--        <input type="radio" name="genre"/>-->
+<!--        <input type="radio" name="genre"/>-->
+<!--        <input type="radio" name="genre"/>-->
+<!--        <br>-->
+
+<!--        <input type="checkbox" name="genre"/>-->
+<!--        <input type="checkbox" name="genre"/>-->
+<!--        <input type="checkbox" name="genre"/>-->
+<!--        <input type="checkbox" name="genre"/>-->
+<!--        <br>-->
+
+        <select id="region">
+            <option>Choississez une région</option>
+            <option id="option-ile-de-france" value="ile-de-france">Île-de-France</option>
+            <option id="option-normandie" value="normandie">Normandie</option>
+            <option id="option-paca" value="paca">Provence-Alpes-Côte d'Azur</option>
+        </select>
+
+        <select id="departement">
+            <!-- ILE DE FRANCE -->
+            <option>Choississez un département</option>
+            <option class="ile-de-france" value="paris">Paris</option>
+            <option class="ile-de-france" value="seine-et-marne">Seine-et-Marne</option>
+            <option class="ile-de-france" value="yvelines">Yvelines</option>
+            <option class="ile-de-france" value="essonne">Essonne</option>
+            <option class="ile-de-france" value="hauts-de-seine">Hauts-de-Seine</option>
+            <option class="ile-de-france" value="val-de-marne">Val-de-Marne</option>
+
+            <!-- PACA -->
+            <option class="paca" value="var">Var</option>
+            <option class="paca" value="bouche-du-rhone">Bouche du Rhone</option>
+            <option class="paca" value="alpes-maritime">Alpes Maritime</option>
+            <option class="paca" value="vaucluse">Vaucluse</option>
+        </select>
+    </form>
+</div>
+
+<!-- CHARGEMENT DES FICHIERS APRES LE CHARGEMENT DE LA PAGE -->
+
+<!-- CHARGEMENT DU FICHIERS A DISTANCE - CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- CHARGEMENT DU FICHIERS EN LOCALE -->
+<!--<script src="jquery.js"></script>-->
+
+<script src="app.js"></script>
+
+</body>
+</html>

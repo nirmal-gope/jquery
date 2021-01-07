@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 3</title>
+    <style>
+        .red {
+            background-color: red !important;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-show-fade" type="button">Afficher (fondu)</button>
+    <button id="btn-hide-fade" type="button">Cacher (fondu)</button>
+
+    <button id="btn-show-slide" type="button">Afficher (slide)</button>
+    <button id="btn-hide-slide" type="button">Cacher (slide)</button>
+
+    <button id="btn-toggle" type="button">Afficher/Cacher</button>
+
+    <button id="btn-color" type="button">Changer couleur</button>
+
+    <img id="image-primary" src="https://via.placeholder.com/150" alt=""/>
+    <img id="image-secondary" src="https://via.placeholder.com/250" alt="" style="display:none;"/>
+
+    <div id="contenu" class="red" style="width: 300px; height: 200px;">
+        Contenu initial
+    </div>
+
+    <!-- CHARGEMENT DES FICHIERS APRES LE CHARGEMENT DE LA PAGE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
