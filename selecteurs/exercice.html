@@ -1,15 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulaire</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Selecteur</title>
 </head>
 <body>
 
 <div>
     <form>
 
-<!--        <input type="text" placeholder="texte"/>-->
+<!--        <input type="text"/>-->
 <!--        <br>-->
 
 <!--        <input type="password"/>-->
@@ -21,15 +21,14 @@
 <!--        <input type="submit"/>-->
 <!--        <br>-->
 
-<!--        <input type="radio" name="genre"/>-->
-<!--        <input type="radio" name="genre"/>-->
-<!--        <input type="radio" name="genre"/>-->
+<!--        <input type="radio" name="genre" value="homme"/>-->
+<!--        <input type="radio" name="genre" value="femme"/>-->
 <!--        <br>-->
 
-<!--        <input type="checkbox" name="genre"/>-->
-<!--        <input type="checkbox" name="genre"/>-->
-<!--        <input type="checkbox" name="genre"/>-->
-<!--        <input type="checkbox" name="genre"/>-->
+<!--        <input type="checkbox" name="genre" value="femme"/>-->
+<!--        <input type="checkbox" name="genre" value="homme"/>-->
+<!--        <input type="checkbox" name="genre" value="femme"/>-->
+<!--        <input type="checkbox" name="genre" value="homme"/>-->
 <!--        <br>-->
 
         <select id="region">
@@ -42,19 +41,22 @@
         <select id="departement">
             <!-- ILE DE FRANCE -->
             <option>Choississez un département</option>
-            <option class="ile-de-france" value="paris">Paris</option>
-            <option class="ile-de-france" value="seine-et-marne">Seine-et-Marne</option>
-            <option class="ile-de-france" value="yvelines">Yvelines</option>
-            <option class="ile-de-france" value="essonne">Essonne</option>
-            <option class="ile-de-france" value="hauts-de-seine">Hauts-de-Seine</option>
-            <option class="ile-de-france" value="val-de-marne">Val-de-Marne</option>
-
-            <!-- PACA -->
-            <option class="paca" value="var">Var</option>
-            <option class="paca" value="bouche-du-rhone">Bouche du Rhone</option>
-            <option class="paca" value="alpes-maritime">Alpes Maritime</option>
-            <option class="paca" value="vaucluse">Vaucluse</option>
         </select>
+
+        <div id="test">Contenu par défaut</div>
+
+        <select id="region2">
+            <option>Choississez une région</option>
+            <option value="ile-de-france">Île-de-France</option>
+            <option value="normandie">Normandie</option>
+            <option value="paca">Provence-Alpes-Côte d'Azur</option>
+        </select>
+
+        <select id="departement2">
+            <!-- ILE DE FRANCE -->
+            <option>Choississez un département</option>
+        </select>
+
     </form>
 </div>
 

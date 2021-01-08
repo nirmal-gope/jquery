@@ -25,6 +25,9 @@ console.log($(window).width());
 // LORSQUE JE RELACHE, LE CARRE ROUGE REVIENT A SA POSITION INITIAL
 
 // MOUSE DOWN -> POSITION: ABSOLUTE
+bloc.on('mousedown', function() {
+    bloc.css('position', 'absolute');
+})
 
 // MOUSE MOVE -> LE BLOC ROUGE SUIT LA SOURIS
 $('body').on('mousemove', function(evenementSouris) {
@@ -51,7 +54,7 @@ $('body').on('mousemove', function(evenementSouris) {
     var positionSourisHorizontalement = evenementSouris.originalEvent.clientX - moitieLargeur;
 
     // Math.max -> Renvoi le plus grand nombre
-    var lePlusGrandNombre = Math.max(10, 30, 40); // 40
+    var lePlusGrandNombre = Math.min(10, 30, 40); // 40
     // Math.min -> Renvoi le plus petit nombre
     var lePlusPetitNombre = Math.min(10, 30, 40); // 10
 
@@ -78,8 +81,10 @@ $('body').on('mousemove', function(evenementSouris) {
 //document.getElementById('main').style.width = '200px';
 //$('#main').css('width', '200' - '100');
 
-// MOUSE UP -> POSITION: INITIAL
-
+// MOUSE UP -> REVENIR A LA POSITION INITIAL -> POSITION: INITIAL
+bloc.on('mouseup', function() {
+    bloc.css('position', 'initial');
+})
 
 // $('body').on('keydown', function(evenementClavier) {
 //     console.log(evenementClavier);

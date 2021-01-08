@@ -5,9 +5,8 @@ var buttons = document.getElementsByTagName('button');
 var div = document.getElementById('contenu');
 
 // 2 - AJOUTER LES ECOUTEUR D'EVENEMENTS
-
 // AFFICHER
-$('#btn-show-fade').on('click', function() {
+$('#btn-show-fade').on('click', function(event) {
     console.log('Afficher');
 
     // 3.A - AFFICHER LE BLOC EN JAVASCRIPT
