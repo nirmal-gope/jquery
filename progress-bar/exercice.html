@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX</title>
+    <style>
+        #container {
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            border: 1px solid green;
+        }
+        #progress-bar {
+            margin: auto;
+            border: 1px solid red;
+            width: 400px;
+            height: 50px;
+        }
+        #progress {
+            background: blue;
+            height:50px;
+            width: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <button id="mon-bouton">Télécharger</button>
+
+</div>
+
+
+<!-- CHARGEMENT DES FICHIERS APRES LE CHARGEMENT DE LA PAGE -->
+
+<!-- CHARGEMENT DU FICHIERS A DISTANCE - CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- CHARGEMENT DU FICHIERS EN LOCALE -->
+<!--<script src="jquery.js"></script>-->
+
+<script src="app.js"></script>
+
+</body>
+</html>
