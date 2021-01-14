@@ -8,6 +8,7 @@ $(document).ready(function() {
     console.log('Page prête !');
 })
 
+
 // LORS D'UN CLIC JE VEUX QUE L'IMAGE SUIVANTE APPARAISSE
 
 // 1 - SELECTIONNER LES IMAGES (1, 2, 3)
